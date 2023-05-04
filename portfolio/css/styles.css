@@ -1,0 +1,530 @@
+:root {
+    --main-light-color: #FFFFFF;
+    --main-font-color: #434455;
+    --secondory-font-color: #2E2F42;
+    --secondory-footer-color: #F4F4FD;
+    --secondory-font-accent-color: #4D5AE5;
+    --active-color-hover: #404bbf;
+    --background-color-btn: #F4F4FD;
+    --accent-color-cornflower: #e7e9fc;
+    --header-color-hover: #404bbf;
+    --green-color: #31D0AA;
+    --bgr-color-icon: #F4F4FD;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #434455;
+    background-color: var(--main-light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    /* background-color: var(--main-light-color); */
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+
+}
+
+
+
+.visualy-hidden {
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+}
+
+
+.container-header {
+    /* робимо класу уявний контейнер за допомогою  display: flex;
+    потім  дітей в цьому контейнері(це а посилання-лого і ul список)
+    центруємо по осі(Y) align-items: center; */
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    display: block;
+    /* елементам (а) добавлений падинг в гору та низ для кращого наведення мишкою
+    в режимі cursor таким чином 
+    ми одразу задаємо і потрібну висоту нашому header */
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-logo {
+    color: var(--secondory-font-color);
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.list-nav {
+    display: flex;
+    gap: 40px;
+}
+
+
+.header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logotyp {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondory-font-accent-color);
+    text-decoration: none;
+    margin-right: 76px;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondory-font-color);
+    /* КУБИК!!!!!!!!! */
+    transition-property: var(--active-color-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--active-color-hover);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    color: var(--header-color-hover);
+}
+
+
+/* СИНЯ РИСОЧКА В НАШОМУ ХЕДЕРФ ПІД НАЗВОЮ СТОРІНКИ */
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    width: 66px;
+    height: 4px;
+    background: #404BBF;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* СИНЯ РИСОЧКА В НАШОМУ ХЕДЕРФ ПІД НАЗВОЮ СТОРІНКИ */
+
+
+
+.address {
+    font-style: normal;
+    /* ДЛЯ ПОСИЛАННЯ ПОЧТИ ЧИ ТЕЛЕФОНА ставимо значення (font-style: normal;) для скидання 
+ стандартного стилю шрифту */
+}
+
+
+.address-contact {
+    margin-left: auto;
+}
+
+.list-nav-address {
+    display: flex;
+    gap: 40px;
+
+}
+
+.header-contact {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-font-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+
+.section-our-product {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    /* ці падінги пребираємо їх бути не повинно але автоперевірка може без них не пропустити
+     padding-left: 120px;
+    padding-right: 120px; */
+}
+
+/* Для списку в класі заданий стиль display: flex;
+для розміщення кнопок в одну лінію по горизонталі 
+Для списку в класі заданий стиль justify-content: center;
+для розміщення дочірніх елементів списку по центру осі(х) */
+
+/* Для списку в класі можна задати стиль gap: 24px;
+для визначення відступів між пунктами списку а також 
+(можна використовувати margin-right: 24px для тега li у класі,але потім 
+треба онулити крайні марджин за допомогою :not(:last-child))*/
+.list-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+
+}
+
+/* випадок використання для li */
+/*(ul li:not(:last-child)) 
+.list-button .item-button:not(:last-child) {
+    margin-right: 24px;} */
+
+
+.btn {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--background-color-btn);
+    color: var(--secondory-font-accent-color);
+    cursor: pointer;
+    border: 1px solid var(--accent-color-cornflower);
+    border-radius: 4px;
+
+    /*короткий запис padding: 12px 24px */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    /* КУБИК!!!!!!!!! */
+    transition-property: var(--main-light-color), border, var(--active-color-hover), box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--main-light-color);
+    /* border: transparent;виставлено без 1 solid як в коментарі ментора 
+    але автоперевірка не приймає тому значення з одиничкою залишаємо*/
+    border: 1px solid transparent;
+    background-color: var(--active-color-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+}
+
+
+
+
+.list-images {
+    display: flex;
+    flex-wrap: wrap;
+    /* Для списку в класі заданий стиль flex-wrap: wrap;
+для не розповзання елементів списку на новий рядок якщо їм не вистачає місця в попередньому */
+
+    column-gap: 24px;
+    row-gap: 48px;
+    margin: 0;
+    /* Для списку в класі заданий стиль column-gap: 24px;
+для визначення горизонтальних відступів між пунктами списку
+ (можна використовувати margin-right: 24px для тега li у класі) */
+
+}
+
+.link-product {
+    display: block;
+    /* width: 360px; */
+}
+
+.link-product:hover,
+.link-product:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+}
+
+
+.item-images {
+    width: calc((100% - 48px) / 3);
+    /* Для списку в класі заданий стиль width: calc((100% - 48px) / 3);
+для визначення ширини для елемента списку (від загальної ширини екрану віднімаємо суму відступів між пунктами
+ і ділимо це на кількість пунктів списку в одному рядку) */
+
+    /* flex-basis:calc(100% /3 - 24px) ; при margin-left: 24px; margin-top: 24px;
+ як в прикладі чомусь не спрацювало */
+
+    background-color: var(--main-light-color);
+    /* border: 0.5px solid #F4F4FD; */
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
+}
+
+/* .item-images:hover,
+.item-images:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+} */
+
+.div-title-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
+}
+
+
+
+.title-product {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondory-font-color);
+}
+
+.text-product {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-font-color)
+}
+
+
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--secondory-font-color);
+}
+
+.footer-logo {
+    color: #f4f4fd;
+}
+
+.list-footer {
+    padding-top: 100px;
+    margin: 0;
+}
+
+.text-footer {
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondory-footer-color);
+}
+
+.logotyp-footer {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondory-font-accent-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-container-right {
+    margin-left: 120px;
+}
+
+
+.text-social-media {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-light-color);
+}
+
+.list-footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondory-font-accent-color);
+    color: var(--main-light-color);
+    /* КУБИК!!!!!!!!! */
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--green-color);
+}
+
+.footer-icon {
+    fill: var(--bgr-color-icon);
+}
+
+
+.wrapper-footer-form {
+    margin-left: 80px;
+
+
+}
+
+.footer-modal-text {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-light-color);
+}
+
+.footer-form-input {
+    padding-left: 16px;
+
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    background: transparent;
+    color: var(--main-light-color);
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--main-light-color);
+}
+
+.footer-form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 24px;
+    margin-left: 24px;
+    width: 164px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: start;
+
+
+    color: var(--main-light-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: var(--secondory-font-accent-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    transition-property: baground-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: var(--header-color-hover);
+}
+
+
+
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 164px;
+    background-color: var(--secondory-font-accent-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform 500ms linear;
+}
+
+.item-images:hover .overlay {
+    transform: translate(0, 0);
+}
