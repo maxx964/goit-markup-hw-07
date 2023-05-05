@@ -140,6 +140,7 @@ body {
     display: flex;
     align-items: center;
 
+
 }
 
 
@@ -270,11 +271,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .list-nav-address {
         display: none;
     }
-}
+} */
 
 
 
@@ -312,13 +313,13 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .hero-section {
         max-width: 428px;
         padding-top: 112px;
         padding-bottom: 112px;
     }
-}
+} */
 
 
 
@@ -340,7 +341,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .title-hero {
         max-width: 320px;
         font-weight: 700;
@@ -349,7 +350,7 @@ body {
         text-transform: capitalize;
         margin-bottom: 72px;
     }
-}
+} */
 
 /* button {
      height: 56px;
@@ -395,11 +396,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .btn-hero {
         width: 169px;
     }
-}
+} */
 
 
 .btn-hero:hover,
@@ -410,13 +411,13 @@ body {
 
 /* СЕКЦІЯ ПЕРЕВАГИ */
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
 
     .visually-hidden,
     .icon-item {
         display: none;
     }
-}
+} */
 
 .section-advantages {
     padding-top: 120px;
@@ -425,13 +426,13 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
 
     .section-advantages {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-}
+} */
 
 .list-advantages {
     display: flex;
@@ -442,14 +443,14 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
 
     .list-advantages {
         flex-direction: column;
         align-items: center;
 
     }
-}
+} */
 
 .item-advantages {
     flex-basis: calc(100% / 4 - 24px);
@@ -472,12 +473,12 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
 
     .icon-advantages {
         display: none;
     }
-}
+} */
 
 /* 
 .item-punctuality::before {
@@ -502,7 +503,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
 
     .title-advantages {
         margin-bottom: 8px;
@@ -515,7 +516,7 @@ body {
         color: var(--secondory-font-color);
 
     }
-}
+} */
 
 .subtitle-team {
     font-weight: 600;
@@ -536,13 +537,13 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .text {
         font-weight: 500;
         color: var(--main-font-color);
     }
 
-}
+} */
 
 .text-team {
     margin-bottom: 8px;
@@ -580,13 +581,12 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .section-whatdoing {
         display: none;
-
     }
 
-}
+} */
 
 
 
@@ -616,13 +616,13 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
 
     .section-advantages {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-}
+} */
 
 /* це клас нашого ul в секції our tean */
 .list-ourteam {
@@ -634,14 +634,14 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .list-ourteam {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-}
+} */
 
 .item-team {
     width: 264px;
@@ -719,16 +719,15 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .customers-list {
         display: flex;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 16px;
-
     }
 
-}
+} */
 
 /* margin-left: -24px;
 }
@@ -743,12 +742,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .item-customers {
         width: calc((100% - 16px) / 2);
     }
 
-}
+} */
 
 
 
@@ -778,12 +777,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .customer-link {
         width: 190px;
 
     }
-}
+} */
 
 
 .icon-customers {
@@ -799,12 +798,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-container {
         display: block;
 
     }
-}
+} */
 
 .footer {
     padding-top: 100px;
@@ -813,12 +812,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-container {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-}
+} */
 
 .logotyp-footer {
     font-family: "Raleway", sans-serif;
@@ -835,13 +834,13 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .logotyp-footer {
         display: flex;
         justify-content: center;
 
     }
-}
+} */
 
 .footer-logo {
     color: #f4f4fd;
@@ -863,7 +862,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .text-footer {
         display: block;
         margin-left: auto;
@@ -872,7 +871,7 @@ body {
         margin-bottom: 72px;
 
     }
-}
+} */
 
 
 .footer-container-left {
@@ -881,11 +880,11 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-container-left {
         margin-right: 0;
     }
-}
+} */
 
 /* МОБІЛЬНА ВЕРСІЯ  */
 /* @media screen and (max-width:767px) {
@@ -906,11 +905,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .text-social-media {
         text-align: center;
     }
-}
+} */
 
 
 .list-footer-social {
@@ -919,12 +918,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .list-footer-social {
         justify-content: center;
         margin-bottom: 72px;
     }
-}
+} */
 
 
 
@@ -957,13 +956,13 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .wrapper-footer-form {
         margin-left: 0;
 
 
     }
-}
+} */
 
 .footer-modal-text {
     margin-bottom: 16px;
@@ -976,11 +975,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-modal-text {
         text-align: center;
     }
-}
+} */
 
 .footer-form-input {
     padding-left: 16px;
@@ -1006,12 +1005,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-form-input {
         width: 398px;
         margin-bottom: 16px;
     }
-}
+} */
 
 .footer-form-btn {
     display: inline-flex;
@@ -1045,7 +1044,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .footer-form-btn {
         margin-left: 0;
         display: block;
@@ -1053,7 +1052,7 @@ body {
         margin-right: auto;
 
     }
-}
+} */
 
 
 
@@ -1110,12 +1109,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .modal {
         width: 392px;
 
     }
-}
+} */
 
 
 
@@ -1427,11 +1426,11 @@ body {
     outline: none;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
-}
+} */
 
 .menu-toggle:hover,
 .menu-toggle:focus {
