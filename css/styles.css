@@ -87,7 +87,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    /* outline: 1px solid green; */
+    outline: 1px solid green;
 
 }
 
@@ -101,7 +101,7 @@ body {
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
@@ -199,12 +199,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:767px) {
     .logotyp {
         margin-right: 0;
 
     }
-}
+} */
 
 
 .header-link {
