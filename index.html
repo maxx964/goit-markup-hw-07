@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- СЕКЦІЯ  ХЕДЕР -->
     <header class="header">
       <div class="container container-header">
         <!-- Section Navigation-->
         <nav class="nav-header">
           <a class="link logotyp" href="./index.html">Web<span class="header-logo">Studio</span></a>
-
           <ul class="list list-nav">
             <li class="item item-header">
               <a class="link header-link underline" href="./index.html">Studio</a>
@@ -36,6 +36,20 @@
             <li class="item item-header"><a class="link header-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
+        <!-- кнопка бургер для викликук меню  -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20">
+            <!-- <use href="./images/icons.svg#icon-menu-hamburger"></use>  -->
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- кнопка бургер для викликук меню  -->
+
         <!-- Section Address -->
         <address class="address address-contact">
           <ul class="list list-nav-address">
@@ -67,12 +81,12 @@
       <!-- Section Our advantages -->
       <section class="section-advantages">
         <div class="container">
-          <h2 class="visually-hidden">Our advantages</h2>
+          <h2 class="title-advantages visually-hidden">Our advantages</h2>
 
           <ul class="list list-advantages">
             <li class="item-advantages">
               <div class="icon-advantages">
-                <svg width="64" height="64">
+                <svg class="icon-item" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -86,7 +100,7 @@
 
             <li class="item-advantages">
               <div class="icon-advantages">
-                <svg width="64" height="64">
+                <svg class="icon-item" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -100,7 +114,7 @@
 
             <li class="item-advantages">
               <div class="icon-advantages">
-                <svg width="64" height="64">
+                <svg class="icon-item" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -114,7 +128,7 @@
 
             <li class="item-advantages">
               <div class="icon-advantages">
-                <svg width="64" height="64">
+                <svg class="icon-item" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -174,18 +188,6 @@
             <li class="item-team">
               <img src="./images/our-team/mark.jpg" width="264" alt="photos of our employees" />
               <div class="div-team">
-                <!-- <h3 class="subtitle-team">Mark Guerrero</h3>
-                <p class="text-team">Product Designer</p>
-                <ul class="list list-social">
-                  
-                  <li class="item-social">
-                    <a href="" class="social-link">
-                      <svg width="16" height="16">
-                        <use href="./images-studio/sprite.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li> -->
-
                 <h3 class="subtitle-team">Mark Guerrero</h3>
                 <p class="text-team">Product Designer</p>
                 <ul class="list list-social">
@@ -479,12 +481,11 @@
         </div>
       </div>
     </footer>
+
     <!-- /* модальне вікно можна зверстати к коді  біля кнопки */ -->
 
-    <!-- is-hidden ВСТАВИТИ В КІНЦІ -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" data-modal>
-        <!-- <a href="" class="icon-modal-close link" data-modal-close> -->
         <button class="icon-modal-btn" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-modal-close"></use>
@@ -550,12 +551,7 @@
           </label>
 
           <div class="wraper-checkbox-users-policy">
-            <!-- <div class="hgjxjtx"> -->
             <input id="users-policy" type="checkbox" name="user-policy" class="modal-form-check" />
-            <!-- <svg class="dffhhzdtht" width="12" height="12">
-                <use href="./images/icons.svg#icon-users-name"></use>
-              </svg> -->
-            <!-- </div> -->
 
             <label for="users-policy" class="modal-form-check-desk"
               >I accept the terms and conditions of the
@@ -566,6 +562,79 @@
         </form>
       </div>
     </div>
+
+    <!-- МОБІЛЬНЕ МЕНЮ -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-btn-close menu-toggle js-close-menu">
+        <svg class="icon-close-mobile" width="8" height="8">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobaile-menu list">
+        <li class="mobaile-item">
+          <a href="./index.html" class="link mobaile-link">Studio</a>
+        </li>
+        <li class="mobaile-item">
+          <a href="./portfolio.html" class="link mobaile-link">Portfolio</a>
+        </li>
+        <li class="mobaile-item">
+          <a href="" class="link mobaile-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobail-contact list">
+        <li class="mobaile-item-contact">
+          <a class="link mobail-contact-tel" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobaile-item-contact">
+          <a class="link mobail-contact-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="list list-footer-social mobaile-social">
+        <li class="item-social">
+          <a href="" class="footer-social-link">
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item-social">
+          <a href="" class="footer-social-link">
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item-social">
+          <a href="" class="footer-social-link">
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item-social">
+          <a href="" class="footer-social-link">
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- МОБІЛЬНЕ МЕНЮ -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
     <!-- Ставим перед закрывающим тегом body -->
     <script src="./js/modal.js"></script>
   </body>
