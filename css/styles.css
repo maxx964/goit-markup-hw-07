@@ -49,6 +49,8 @@ img {
     /* потрібне встановленя для скидання кусочка 
     проміжка в 4px місця яке браузер встановлює за замовчуванням
     щоб елементи не злипалися */
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -83,27 +85,31 @@ body {
 
 /* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 .container {
+
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 1px solid green;
+    outline: 1px solid rgb(4, 172, 91);
+
+    /* background-color: #31D0AA; */
 
 }
 
 @media screen and (min-width: 428px) {
     .container {
         width: 428px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
 
     }
-
 }
+
 
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+
     }
 }
 
@@ -130,20 +136,25 @@ body {
         width: 1px;
         position: absolute;
     }
-
-    /* для приховання логічного зоголовка застосовуемо .visually-hidden */
 }
+
+/* для приховання логічного зоголовка застосовуемо .visually-hidden */
+/* } */
 
 /*  СЕКЦІЯ HEADER умовно шапка сайту*/
 
 .container-header {
     display: flex;
     align-items: center;
-
-
+    justify-content: space-between;
 }
 
-
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:768px) {
+    .js-open-menu {
+        margin-left: 250px;
+    }
+}
 
 .header-link {
     display: block;
@@ -177,6 +188,7 @@ body {
 .list-nav {
     display: flex;
     gap: 40px;
+
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
@@ -200,12 +212,31 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .logotyp {
         margin-right: 0;
 
     }
-} */
+}
+
+
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:768px) {
+    .js-open-menu {
+        padding: 0;
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        display: flex;
+        border: none;
+        background-color: transparent;
+        justify-content: center;
+
+    }
+}
+
+
 
 
 .header-link {
@@ -268,14 +299,15 @@ body {
 .list-nav-address {
     display: flex;
     gap: 40px;
+
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .list-nav-address {
         display: none;
     }
-} */
+}
 
 
 
@@ -313,13 +345,13 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .hero-section {
         max-width: 428px;
         padding-top: 112px;
         padding-bottom: 112px;
     }
-} */
+}
 
 
 
@@ -341,7 +373,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .title-hero {
         max-width: 320px;
         font-weight: 700;
@@ -350,7 +382,7 @@ body {
         text-transform: capitalize;
         margin-bottom: 72px;
     }
-} */
+}
 
 /* button {
      height: 56px;
@@ -396,11 +428,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .btn-hero {
         width: 169px;
     }
-} */
+}
 
 
 .btn-hero:hover,
@@ -411,13 +443,13 @@ body {
 
 /* СЕКЦІЯ ПЕРЕВАГИ */
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .visually-hidden,
     .icon-item {
         display: none;
     }
-} */
+}
 
 .section-advantages {
     padding-top: 120px;
@@ -426,13 +458,13 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .section-advantages {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-} */
+}
 
 .list-advantages {
     display: flex;
@@ -443,14 +475,14 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .list-advantages {
         flex-direction: column;
         align-items: center;
 
     }
-} */
+}
 
 .item-advantages {
     flex-basis: calc(100% / 4 - 24px);
@@ -473,12 +505,12 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .icon-advantages {
         display: none;
     }
-} */
+}
 
 /* 
 .item-punctuality::before {
@@ -503,7 +535,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .title-advantages {
         margin-bottom: 8px;
@@ -516,7 +548,7 @@ body {
         color: var(--secondory-font-color);
 
     }
-} */
+}
 
 .subtitle-team {
     font-weight: 600;
@@ -537,13 +569,13 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .text {
         font-weight: 500;
         color: var(--main-font-color);
     }
 
-} */
+}
 
 .text-team {
     margin-bottom: 8px;
@@ -581,12 +613,12 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .section-whatdoing {
         display: none;
     }
 
-} */
+}
 
 
 
@@ -616,13 +648,13 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .section-advantages {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-} */
+}
 
 /* це клас нашого ul в секції our tean */
 .list-ourteam {
@@ -634,14 +666,14 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .list-ourteam {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-} */
+}
 
 .item-team {
     width: 264px;
@@ -719,7 +751,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .customers-list {
         display: flex;
         flex-wrap: wrap;
@@ -727,7 +759,7 @@ body {
         column-gap: 16px;
     }
 
-} */
+}
 
 /* margin-left: -24px;
 }
@@ -742,12 +774,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .item-customers {
         width: calc((100% - 16px) / 2);
     }
 
-} */
+}
 
 
 
@@ -777,12 +809,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .customer-link {
         width: 190px;
 
     }
-} */
+}
 
 
 .icon-customers {
@@ -798,12 +830,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer-container {
         display: block;
 
     }
-} */
+}
 
 .footer {
     padding-top: 100px;
@@ -812,12 +844,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer-container {
         padding-top: 96px;
         padding-bottom: 96px;
     }
-} */
+}
 
 .logotyp-footer {
     font-family: "Raleway", sans-serif;
@@ -834,13 +866,13 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .logotyp-footer {
         display: flex;
         justify-content: center;
 
     }
-} */
+}
 
 .footer-logo {
     color: #f4f4fd;
@@ -862,7 +894,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .text-footer {
         display: block;
         margin-left: auto;
@@ -871,7 +903,7 @@ body {
         margin-bottom: 72px;
 
     }
-} */
+}
 
 
 .footer-container-left {
@@ -880,18 +912,18 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer-container-left {
         margin-right: 0;
     }
-} */
+}
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
     .footer-container-right {
         margin-right: 0;
     }
-} */
+}
 
 
 .text-social-media {
@@ -905,11 +937,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .text-social-media {
         text-align: center;
     }
-} */
+}
 
 
 .list-footer-social {
@@ -918,12 +950,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .list-footer-social {
         justify-content: center;
         margin-bottom: 72px;
     }
-} */
+}
 
 
 
@@ -956,13 +988,13 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .wrapper-footer-form {
         margin-left: 0;
 
 
     }
-} */
+}
 
 .footer-modal-text {
     margin-bottom: 16px;
@@ -975,11 +1007,11 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer-modal-text {
         text-align: center;
     }
-} */
+}
 
 .footer-form-input {
     padding-left: 16px;
@@ -1005,12 +1037,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer-form-input {
         width: 398px;
         margin-bottom: 16px;
     }
-} */
+}
 
 .footer-form-btn {
     display: inline-flex;
@@ -1044,7 +1076,7 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer-form-btn {
         margin-left: 0;
         display: block;
@@ -1052,7 +1084,7 @@ body {
         margin-right: auto;
 
     }
-} */
+}
 
 
 
@@ -1109,12 +1141,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .modal {
         width: 392px;
 
     }
-} */
+}
 
 
 
@@ -1407,24 +1439,20 @@ body {
 }
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left: 243px;
-
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    width: 24px;
+    height: 24px;
 
     background-color: transparent;
     cursor: pointer;
-    border: none;
     border-radius: 50%;
-    outline: none;
+    border: 1px solid var(--light-slate);
 }
+
 
 /* @media only screen and (min-width: 768px) {
     .menu-toggle {
@@ -1538,9 +1566,4 @@ body {
     margin-right: 60px;
 
     justify-content: space-between;
-}
-
-.mobile-btn-close {
-    border: 1px solid #E7E9FC;
-
 }
