@@ -978,6 +978,15 @@ body {
     background-color: var(--secondory-font-color);
 }
 
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ */
+@media screen and (max-width:1200px) {
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+
 .footer-container {
 
     display: flex;
@@ -998,17 +1007,6 @@ body {
     .footer-container {
         flex-wrap: wrap;
 
-    }
-}
-
-
-
-
-/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ */
-@media screen and (max-width:1200px) {
-    .footer-container {
-        padding-top: 96px;
-        padding-bottom: 96px;
     }
 }
 

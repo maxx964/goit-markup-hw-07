@@ -10,6 +10,7 @@
     --header-color-hover: #404bbf;
     --green-color: #31D0AA;
     --bgr-color-icon: #F4F4FD;
+    --light-slate: #8E8F99;
 }
 
 body {
@@ -529,6 +530,60 @@ img {
     background-color: var(--secondory-font-color);
 }
 
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ */
+@media screen and (max-width:1200px) {
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+
+.footer-container {
+    display: flex;
+    align-items: baseline
+}
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .footer-container {
+        display: block;
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .footer-container {
+        flex-wrap: wrap;
+
+    }
+}
+
+
+.logotyp-footer {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondory-font-accent-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:768px) {
+    .logotyp-footer {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
 .footer-logo {
     color: #f4f4fd;
 }
@@ -545,26 +600,49 @@ img {
     color: var(--secondory-footer-color);
 }
 
-.logotyp-footer {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--secondory-font-accent-color);
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 16px;
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .text-footer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 268px;
+        margin-bottom: 72px;
+
+    }
 }
 
-.footer-container {
-    display: flex;
+
+
+.footer-container-left {
+    margin-right: 120px;
 }
 
-.footer-container-right {
-    margin-left: 120px;
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:768px) {
+    .footer-container-left {
+        margin-right: 0;
+    }
 }
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:767px) {
+    .footer-container-right {
+        margin-right: 0;
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .footer-container-left {
+        margin-right: 24px;
+        margin-left: 80px;
+        margin-bottom: 72px;
+    }
+
+}
+
+
 
 
 .text-social-media {
@@ -577,9 +655,24 @@ img {
     color: var(--main-light-color);
 }
 
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .text-social-media {
+        text-align: center;
+    }
+}
+
 .list-footer-social {
     display: flex;
     gap: 16px;
+}
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .list-footer-social {
+        justify-content: center;
+        margin-bottom: 72px;
+    }
 }
 
 .footer-social-link {
@@ -611,6 +704,23 @@ img {
 
 }
 
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .wrapper-footer-form {
+        margin-left: 0;
+
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .wrapper-footer-form {
+        display: block;
+    }
+}
+
 .footer-modal-text {
     margin-bottom: 16px;
 
@@ -619,6 +729,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-light-color);
+}
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .footer-modal-text {
+        text-align: center;
+    }
 }
 
 .footer-form-input {
@@ -641,6 +758,14 @@ img {
     line-height: 2;
     letter-spacing: 0.04em;
     color: var(--main-light-color);
+}
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .footer-form-input {
+        width: 398px;
+        margin-bottom: 16px;
+    }
 }
 
 .footer-form-btn {
@@ -675,6 +800,16 @@ img {
     background-color: var(--header-color-hover);
 }
 
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .footer-form-btn {
+        margin-left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
 
 
 
