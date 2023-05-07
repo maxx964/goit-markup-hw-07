@@ -86,7 +86,10 @@ body {
 /* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 .container {
 
-    width: 100%;
+    min-width: 320px;
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -96,26 +99,18 @@ body {
 
 }
 
-@media screen and (min-width: 428px) {
-    .container {
-        width: 428px;
-        margin-right: auto;
-        margin-left: auto;
-
-    }
-}
-
-
+/* ТАБЛЕТ ВЕРСІЯ */
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
 
     }
 }
 
+/* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
     }
 
 }
@@ -150,11 +145,12 @@ body {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .js-open-menu {
         margin-left: 250px;
+
     }
-}
+} */
 
 .header-link {
     display: block;
@@ -219,6 +215,14 @@ body {
     }
 }
 
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .logotyp {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
 
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
@@ -227,6 +231,7 @@ body {
 
         padding-top: 24px;
         padding-bottom: 24px;
+        margin-left: 250px;
 
         display: flex;
         border: none;
@@ -236,7 +241,12 @@ body {
     }
 }
 
+@media screen and (min-width:768px) {
+    .js-open-menu {
+        display: none;
 
+    }
+}
 
 
 .header-link {
@@ -299,7 +309,6 @@ body {
 .list-nav-address {
     display: flex;
     gap: 40px;
-
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
@@ -309,6 +318,13 @@ body {
     }
 }
 
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .list-nav-address {
+        display: block;
+
+    }
+}
 
 
 
@@ -319,6 +335,32 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-font-color);
 }
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .header-contact {
+        padding: 0;
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-address {
+        margin-top: 16px;
+        margin-bottom: 12px;
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-address:last-child {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+}
+
 
 
 /* ГОЛОВНА СЕКЦІЯ  HERO */
@@ -353,7 +395,12 @@ body {
     }
 }
 
-
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .hero-section {
+        max-width: 768px;
+    }
+}
 
 
 .title-hero {
@@ -442,14 +489,22 @@ body {
 }
 
 /* СЕКЦІЯ ПЕРЕВАГИ */
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
 
-    .visually-hidden,
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+@media screen and (max-width:1200px) {
+
+    .visually-hidden {
+        display: none;
+    }
+}
+
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+@media screen and (max-width:1200px) {
     .icon-item {
         display: none;
     }
 }
+
 
 .section-advantages {
     padding-top: 120px;
@@ -457,8 +512,8 @@ body {
     background-color: var(--main-light-color);
 }
 
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+@media screen and (max-width:1200px) {
 
     .section-advantages {
         padding-top: 96px;
@@ -484,11 +539,21 @@ body {
     }
 }
 
+
 .item-advantages {
     flex-basis: calc(100% / 4 - 24px);
     margin-left: 24px;
     /* width: calc((100% - 3 * 24px) / 4); */
 }
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-advantages {
+        flex-basis: calc(100% / 2 - 24px);
+        margin-left: 24px;
+    }
+}
+
 
 .icon-advantages {
     display: flex;
@@ -504,8 +569,8 @@ body {
 
 
 
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ */
+@media screen and (max-width:1200px) {
 
     .icon-advantages {
         display: none;
@@ -534,8 +599,8 @@ body {
     color: var(--secondory-font-color);
 }
 
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+@media screen and (max-width:1200px) {
 
     .title-advantages {
         margin-bottom: 8px;
@@ -546,7 +611,13 @@ body {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--secondory-font-color);
+    }
+}
 
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .title-advantages {
+        text-align: start;
     }
 }
 
@@ -609,6 +680,7 @@ body {
 .section-whatdoing {
     padding-bottom: 120px;
     background-color: var(--main-light-color);
+    display: none;
 }
 
 
@@ -647,10 +719,10 @@ body {
 }
 
 
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+/* МОБІЛЬНА ВЕРСІЯ ТА ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (max-width:1200px) {
 
-    .section-advantages {
+    .section-ourteam {
         padding-top: 96px;
         padding-bottom: 96px;
     }
@@ -674,6 +746,24 @@ body {
     }
 
 }
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .list-ourteam {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+/* @media screen and (min-width:768px) and (max-width:1200px) {
+    .list-ourteam {
+        flex-basis: calc(100% / 2);
+
+    }
+} */
 
 .item-team {
     width: 264px;
@@ -728,7 +818,14 @@ body {
     margin: 0 auto;
 }
 
+/* МОБІЛЬНА ВЕРСІЯ ТА ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (max-width:1200px) {
 
+    .section-customers {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
 
 .customer-titel {
     margin-bottom: 72px;
@@ -747,41 +844,44 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
     .customers-list {
-        display: flex;
-        flex-wrap: wrap;
+        /* display: flex;
+        flex-wrap: wrap; */
         row-gap: 72px;
         column-gap: 16px;
     }
 
 }
 
-/* margin-left: -24px;
-}
 
-.customers-list>.item-customers {
-    flex-basis: calc(100% / 6 - 24px);
-    margin-left: 24px;
-} */
-
-.item-customers {
-    width: calc((100% - 120px) / 6);
-}
-
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
-    .item-customers {
-        width: calc((100% - 16px) / 2);
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .wrapper-customers {
+        margin-left: 90px;
+        width: 552px;
     }
-
 }
 
 
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-customers {
+        margin-bottom: 72px;
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-customers:nth-child(n+4) {
+        margin-bottom: 0px;
+    }
+}
 
 .customer-link {
     display: flex;
@@ -808,10 +908,20 @@ body {
     border: 1px solid var(--btn-hero-color-hover);
 }
 
+
+
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
     .customer-link {
         width: 190px;
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .customer-link {
+        width: 168px;
 
     }
 }
@@ -821,6 +931,14 @@ body {
     fill: currentColor;
 }
 
+
+
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--secondory-font-color);
+}
 
 .footer-container {
 
@@ -837,14 +955,19 @@ body {
     }
 }
 
-.footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: var(--secondory-font-color);
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .footer-container {
+        flex-wrap: wrap;
+
+    }
 }
 
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+
+
+
+/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ */
+@media screen and (max-width:1200px) {
     .footer-container {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -925,6 +1048,15 @@ body {
     }
 }
 
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .footer-container-left {
+        margin-right: 24px;
+        margin-left: 80px;
+        margin-bottom: 72px;
+    }
+
+}
 
 .text-social-media {
     margin-bottom: 16px;
@@ -993,6 +1125,13 @@ body {
         margin-left: 0;
 
 
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .wrapper-footer-form {
+        display: block;
     }
 }
 
@@ -1481,6 +1620,15 @@ body {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
+
+/* МОБІЛЬНЕ МЕНЮ */
+@media screen and (min-width:768px) {
+    .menu-container {
+        display: none;
+
+    }
+}
+
 
 .menu-container.is-open {
     transform: translateX(0);
