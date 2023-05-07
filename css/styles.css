@@ -118,20 +118,20 @@ body {
 /* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 
 
-@media screen and (min-width: 1200px) {
-    .visually-hidden {
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-        width: 1px;
-        position: absolute;
-    }
+
+.visually-hidden {
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
 }
+
 
 /* для приховання логічного зоголовка застосовуемо .visually-hidden */
 /* } */
@@ -535,6 +535,20 @@ body {
     .list-advantages {
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .list-advantages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+
 
     }
 }
@@ -546,6 +560,16 @@ body {
     /* width: calc((100% - 3 * 24px) / 4); */
 }
 
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+
+    .item-advantages {
+        margin-left: 0px;
+    }
+}
+
+
+
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .item-advantages {
@@ -553,6 +577,13 @@ body {
         margin-left: 24px;
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-advantages {
+        margin-left: 0px;
+    }
+}
+
 
 
 .icon-advantages {
@@ -645,7 +676,14 @@ body {
         font-weight: 500;
         color: var(--main-font-color);
     }
+}
 
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .text {
+        width: 351px;
+    }
 }
 
 .text-team {
@@ -1608,8 +1646,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    max-width: 428px;
-    max-width: 796px;
+    width: 100vw;
+    height: 100vh;
     padding-left: 40px;
     padding-bottom: 40px;
     background-color: var(--main-light-color);
@@ -1621,13 +1659,14 @@ body {
     transition: transform 250ms ease-in-out;
 }
 
-/* МОБІЛЬНЕ МЕНЮ */
+/* МОБІЛЬНЕ МЕНЮ ДЛЯ ПЛАНШЕТА  */
 @media screen and (min-width:768px) {
     .menu-container {
         display: none;
 
     }
 }
+
 
 
 .menu-container.is-open {
