@@ -361,13 +361,13 @@ img {
 }
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
-/* @media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
     .section-our-product {
         padding-top: 64px;
         padding-bottom: 96px;
 
     }
-} */
+}
 
 
 /* випадок використання для li */
@@ -451,10 +451,12 @@ img {
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .list-images {
-        display: block;
+        display: inline;
+
     }
 }
 
+/* ТРЕБА ЗАВТРА РОЗІБРАТЬ */
 
 
 
@@ -484,8 +486,14 @@ img {
     /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
-/* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .item-images {
+        width: calc((100% - 48px) / 2);
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
 
 
 
