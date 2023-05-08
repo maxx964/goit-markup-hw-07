@@ -89,8 +89,8 @@ body {
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 
     /* outline: 1px solid rgb(4, 172, 91); */
 
@@ -107,7 +107,7 @@ body {
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1200px;
+        max-width: 1160px;
     }
 
 }
@@ -141,13 +141,6 @@ body {
     justify-content: space-between;
 }
 
-/* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
-    .js-open-menu {
-        margin-left: 250px;
-
-    }
-} */
 
 .header-link {
     display: block;
@@ -157,8 +150,6 @@ body {
     в режимі cursor таким чином 
     ми одразу задаємо і потрібну висоту нашому header */
 }
-
-
 
 /* скидання крайньої геометрії тобто марджину за допомогою :not(:last-child) у останьої дити в списку у
 всіх що перед ним марджин залишається (!крайній марджин прибираємо ЗАВЖДИ!) */
@@ -176,7 +167,17 @@ body {
 .nav-header {
     display: flex;
     align-items: center;
+
 }
+
+/* МОБІЛЬНА ВЕРСІЯ */
+/* @media screen and (max-width:768px) {
+    .nav-header {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+} */
 
 .list-nav {
     display: flex;
@@ -207,7 +208,7 @@ body {
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .logotyp {
-        margin-right: 0;
+        margin-right: 250px;
 
     }
 }
@@ -228,12 +229,9 @@ body {
 
         padding-top: 24px;
         padding-bottom: 24px;
-        margin-left: 250px;
-
-        display: flex;
         border: none;
         background-color: transparent;
-        justify-content: center;
+
 
     }
 }
@@ -1109,7 +1107,7 @@ body {
 
 
 .text-footer {
-    font-size: 500px;
+
     max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
@@ -1387,6 +1385,12 @@ body {
     }
 }
 
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .modal {
+        width: 408px;
+    }
+}
 
 
 .icon-modal-btn {
@@ -1607,21 +1611,6 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
-/* .hgjxjtx {
-
-    position: relative;
-
-} */
-
-/* .dffhhzdtht {
-    position: absolute;
-    top: 1.8px;
-    left: 1.8px;
-    fill: #FFFFFF;
-    pointer-events: none;
-
-} */
 
 
 .modal-form-check:checked {

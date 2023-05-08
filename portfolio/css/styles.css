@@ -74,12 +74,12 @@ img {
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 
-    outline: 1px solid rgb(4, 172, 91);
+    /* outline: 1px solid rgb(4, 172, 91); */
 
-    /* background-color: #31D0AA; */
+
 
 }
 
@@ -94,7 +94,7 @@ img {
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1158px;
+        max-width: 1160px;
     }
 
 }
@@ -337,6 +337,7 @@ img {
     /* ці падінги пребираємо їх бути не повинно але автоперевірка може без них не пропустити
      padding-left: 120px;
     padding-right: 120px; */
+
 }
 
 /* Для списку в класі заданий стиль display: flex;
