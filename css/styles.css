@@ -82,7 +82,6 @@ body {
 /* } */
 
 
-
 /* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 .container {
 
@@ -93,9 +92,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 1px solid rgb(4, 172, 91);
-
-    /* background-color: #31D0AA; */
+    /* outline: 1px solid rgb(4, 172, 91); */
 
 }
 
@@ -110,7 +107,7 @@ body {
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1158px;
+        max-width: 1200px;
     }
 
 }
@@ -366,41 +363,94 @@ body {
 /* ГОЛОВНА СЕКЦІЯ  HERO */
 
 .hero-section {
-    padding-top: 188px;
-    padding-bottom: 188px;
 
     text-align: center;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../images/hero/hero-img.jpg), url(../images/hero/dark-bg.jpg);
+    /* background-image: url(../images/hero/hero-img.jpg), url(../images/hero/dark-bg.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-img.jpg); */
+
     /* розмір секціям ми задаемо через padding якщо наприклад в секції є
 заголовок то відступ в данному випадку рахуються зверху від заголовка 188px 
 і від низу заголовка теж 188px */
 }
 
-.hero-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-img.jpg);
-}
+
 
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .hero-section {
-        max-width: 428px;
         padding-top: 112px;
         padding-bottom: 112px;
+        max-width: 428px;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgmob@1x.jpg), url(../images/hero/dark-bg.jpg);
+
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgmob@2x.jpg), url(../images/hero/dark-bg.jpg);
+        }
+
+    }
+
 }
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .hero-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
         max-width: 768px;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgtab@1x.jpg), url(../images/hero/dark-bg.jpg);
+
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgtab@2x.jpg), url(../images/hero/dark-bg.jpg);
+
+        }
+
+    }
+
 }
+
+/* ДЕСКТОП ВЕРСІЯ */
+@media screen and (min-width: 1200px) {
+    .hero-section {
+        min-width: 1200px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/bgr-hero-imgdesc@1x.jpg), url(../images/hero/dark-bg.jpg);
+
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/bgr-hero-imgdesc@2x.jpg), url(../images/hero/dark-bg.jpg);
+
+        }
+
+    }
+
+
+}
+
 
 
 .title-hero {
@@ -428,6 +478,14 @@ body {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         margin-bottom: 72px;
+    }
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) {
+    .title-hero {
+        margin-bottom: 36px;
+
     }
 }
 
@@ -718,7 +776,7 @@ body {
 .section-whatdoing {
     padding-bottom: 120px;
     background-color: var(--main-light-color);
-    display: none;
+
 }
 
 
@@ -730,7 +788,12 @@ body {
 
 }
 
-
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .section-whatdoing {
+        display: none;
+    }
+}
 
 /* клас ul в секції what are doing */
 .list-whatdoing {
@@ -1009,6 +1072,7 @@ body {
 
     }
 }
+
 
 .logotyp-footer {
     font-family: "Raleway", sans-serif;

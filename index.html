@@ -39,16 +39,18 @@
 
         <!-- кнопка бургер для викликук меню  -->
         <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="icon-burger" width="32" height="22" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="btn-burger" width="32" height="22" viewBox="0 0 47 32">
             <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-miterlimit="4"
+              stroke-width="4.3636"
+              stroke="#000"
+              d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"
             ></path>
           </svg>
         </button>
-        <!-- <button type="">close</button> -->
-        <!-- <use href="./images/icons.svg#icon-menu-hamburger"></use>  -->
+
         <!-- кнопка бургер для викликук меню  -->
 
         <!-- Section Address -->
@@ -152,6 +154,10 @@
           <ul class="list list-whatdoing">
             <li class="item-whatdoing">
               <img
+                srcset="
+                  ./images/what-doing/mon@1x_360.jpg 360w,
+                  ./images/what-doing/mon@2x_720.jpg 720w
+                "
                 src="./images/what-doing/img1.jpg"
                 width="360"
                 height="300"
@@ -161,6 +167,10 @@
 
             <li class="item-whatdoing">
               <img
+                srcset="
+                  ./images/what-doing/img@1x_360.jpg 360w,
+                  ./images/what-doing/img@2x_720.jpg 720w
+                "
                 src="./images/what-doing/img2.jpg"
                 width="360"
                 height="300"
@@ -170,6 +180,10 @@
 
             <li class="item-whatdoing">
               <img
+                srcset="
+                  ./images/what-doing/app@1x_360.jpg 360w,
+                  ./images/what-doing/app@2x_720.jpg 720w
+                "
                 src="./images/what-doing/img3.jpg"
                 width="360"
                 height="300"
@@ -187,7 +201,13 @@
 
           <ul class="list list-ourteam">
             <li class="item-team">
-              <img src="./images/our-team/mark.jpg" width="264" alt="photos of our employees" />
+              <img
+                srcset="./images\our-team\mark@1x.jpg, ./images\our-team\mark@2x.jpg"
+                src="./images/our-team/mark.jpg"
+                width="264"
+                height="260"
+                alt="photos of our employees"
+              />
               <div class="div-team">
                 <h3 class="subtitle-team">Mark Guerrero</h3>
                 <p class="text-team">Product Designer</p>
@@ -226,6 +246,7 @@
 
             <li class="item-team">
               <img
+                srcset="./images\our-team\tom@1x.jpg, ./images\our-team\tom@2x.jpg"
                 src="./images/our-team/tom.jpg"
                 width="264"
                 height="260"
@@ -269,6 +290,7 @@
 
             <li class="item-team">
               <img
+                srcset="./images\our-team\camila@1x.jpg, ./images\our-team\camila@2x.jpg"
                 src="./images/our-team/camila.jpg"
                 width="264"
                 height="260"
@@ -312,6 +334,7 @@
 
             <li class="item-team">
               <img
+                srcset="./images\our-team\daniel@1x.jpg, ./images\our-team\daniel@2x.jpg"
                 src="./images/our-team/daniel.jpg"
                 width="264"
                 height="260"
