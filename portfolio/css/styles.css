@@ -924,6 +924,7 @@ img {
 } */
 
 .menu-container {
+
     padding-left: 40px;
     padding-right: 35px;
     padding-bottom: 40px;
@@ -932,8 +933,9 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+
     background-color: var(--main-light-color);
     z-index: 999;
 
@@ -947,6 +949,7 @@ img {
 @media screen and (min-width:768px) {
     .menu-container {
         display: none;
+
 
     }
 }

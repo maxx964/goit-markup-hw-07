@@ -58,6 +58,7 @@ body {
     font-style: normal;
     color: var(--main-light-color);
     color: var(--main-font-color);
+
 }
 
 
@@ -390,7 +391,9 @@ body {
     .hero-section {
         padding-top: 112px;
         padding-bottom: 112px;
-        max-width: 428px;
+
+        /* ТРЕБА ПОМІРКУВАТИ */
+        /* max-width: 428px; */
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgmob@1x.jpg), url(../images/hero/dark-bg.jpg);
 
@@ -412,7 +415,9 @@ body {
     .hero-section {
         padding-top: 112px;
         padding-bottom: 112px;
-        max-width: 768px;
+
+        /* ТРЕБА ПОМІРКУВАТИ */
+        /* max-width: 768px; */
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgtab@1x.jpg), url(../images/hero/dark-bg.jpg);
 
@@ -1723,6 +1728,13 @@ body {
     transition: transform 250ms ease-in-out;
 }
 
+@media only screen and (max-width: 428px) {
+    .menu-container {
+
+        height: auto;
+    }
+}
+
 
 
 .menu-container.is-open {
@@ -1740,26 +1752,6 @@ body {
 
 
 }
-
-/* .mobaile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-} */
-
-/* .mobaile-menu {
-    margin-top: 80px;
-
-} */
-
-
-/* .mobaile-item {
-    margin-bottom: 40px;
-} */
-
-/* .mobaile-item:last-child {
-    margin-bottom: 0;
-} */
 
 
 .mobaile-link {
