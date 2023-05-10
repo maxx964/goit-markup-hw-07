@@ -148,15 +148,7 @@ body {
 .container-header {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
-/* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:428px) {
-    .container-header {}
-}
-
 
 
 .header-link {
@@ -187,14 +179,7 @@ body {
 
 }
 
-/* МОБІЛЬНА ВЕРСІЯ */
-/* @media screen and (max-width:768px) {
-    .nav-header {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-} */
+
 
 .list-nav {
     display: flex;
@@ -250,8 +235,6 @@ body {
     .js-open-menu {
         border: none;
         background-color: transparent;
-
-
     }
 }
 
@@ -300,6 +283,10 @@ body {
     background: #404BBF;
     border-radius: 2px;
     display: block;
+}
+
+.activated {
+    color: var(--header-color-hover);
 }
 
 
@@ -1789,6 +1776,12 @@ body {
     text-decoration: none;
 }
 
+.mobaile-link:hover,
+.mobaile-link:focus {
+    color: var(--btn-hero-color-hover);
+}
+
+
 .mobaile-menu {
     margin-bottom: 284px;
 }
@@ -1827,5 +1820,5 @@ body {
 
 .mobaile-social {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }

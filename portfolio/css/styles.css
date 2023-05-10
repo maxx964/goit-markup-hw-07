@@ -68,24 +68,34 @@ img {
     padding-right: 15px;
 
 } */
+/* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 .container {
 
-    min-width: 320px;
-    max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+    /* width: 100%; */
     padding-left: 15px;
     padding-right: 15px;
 
-    /* outline: 1px solid rgb(4, 172, 91); */
-
+    outline: 1px solid rgb(4, 172, 91);
 }
 
+
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (min-width:428px) {
+    .container {
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* .footer-form-input {
+    display: none;
+} */
 
 /* ТАБЛЕТ ВЕРСІЯ */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 768px;
 
     }
 }
@@ -93,13 +103,16 @@ img {
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1158px;
+        width: 1158px;
     }
 
 }
 
+/* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 
-.visualy-hidden {
+
+
+.visually-hidden {
     height: 1px;
     margin: -1px;
     border: 0;
@@ -113,51 +126,58 @@ img {
 }
 
 
+/* для приховання логічного зоголовка застосовуемо .visually-hidden */
+/* } */
 
+/*  СЕКЦІЯ HEADER умовно шапка сайту*/
 
 .container-header {
-    /* робимо класу уявний контейнер за допомогою  display: flex;
-    потім  дітей в цьому контейнері(це а посилання-лого і ul список)
-    центруємо по осі(Y) align-items: center; */
+    position: relative;
     display: flex;
-    align-items: center;
 }
+
 
 .header-link {
     display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     /* елементам (а) добавлений падинг в гору та низ для кращого наведення мишкою
     в режимі cursor таким чином 
     ми одразу задаємо і потрібну висоту нашому header */
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
+
+/* скидання крайньої геометрії тобто марджину за допомогою :not(:last-child) у останьої дити в списку у
+всіх що перед ним марджин залишається (!крайній марджин прибираємо ЗАВЖДИ!) */
+/* 
+.list-nav>.item:not(:last-child),
+.list-address>.item:not(:last-child) {
+    margin-right: 40px; */
+
 
 .header-logo {
     color: var(--secondory-font-color);
+    /* логотипу добавленний селекто span з класом header-logo для стилізації частини тексту */
 }
 
 .nav-header {
     display: flex;
     align-items: center;
+
 }
+
+
 
 .list-nav {
     display: flex;
     gap: 40px;
-}
 
+}
 
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .list-nav {
         display: none;
     }
-}
-
-.header-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .logotyp {
@@ -169,14 +189,16 @@ img {
     letter-spacing: 0.03em;
     color: var(--secondory-font-accent-color);
     text-decoration: none;
+    /* додали правий марджин логотипу  */
     margin-right: 76px;
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .logotyp {
-        margin-right: 0;
-
+        margin: 0;
+        margin-top: 24px;
+        margin-bottom: 22px;
     }
 }
 
@@ -188,21 +210,17 @@ img {
     }
 }
 
+.js-open-menu {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
 
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .js-open-menu {
-        padding: 0;
-
-        padding-top: 24px;
-        padding-bottom: 24px;
-        margin-left: 250px;
-
-        display: flex;
         border: none;
         background-color: transparent;
-        justify-content: center;
-
     }
 }
 
@@ -213,6 +231,7 @@ img {
     }
 }
 
+
 .header-link {
     font-weight: 500;
     font-size: 16px;
@@ -220,14 +239,14 @@ img {
     letter-spacing: 0.02em;
     color: var(--secondory-font-color);
     /* КУБИК!!!!!!!!! */
-    transition-property: var(--active-color-hover);
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--active-color-hover);
+    color: var(--header-color-hover);
 }
 
 .header-contact:hover,
@@ -235,33 +254,39 @@ img {
     color: var(--header-color-hover);
 }
 
-
-/* СИНЯ РИСОЧКА В НАШОМУ ХЕДЕРФ ПІД НАЗВОЮ СТОРІНКИ */
 .underline {
     position: relative;
 }
 
 .underline::after {
-    content: "";
-    width: 66px;
-    height: 4px;
-    background: #404BBF;
-    border-radius: 2px;
+
     position: absolute;
     bottom: 0;
     left: 0;
+    content: "";
+    width: 48px;
+    height: 4px;
+    background: #404BBF;
+    border-radius: 2px;
+    display: block;
 }
 
-/* СИНЯ РИСОЧКА В НАШОМУ ХЕДЕРФ ПІД НАЗВОЮ СТОРІНКИ */
+.activated {
+    color: var(--header-color-hover);
+}
 
+.header-contact {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* добавлений падинг в горі та в низу елемента для кращого наведення мишкою 
+    для режиму cursor  */
+}
 
 
 .address {
     font-style: normal;
-    /* ДЛЯ ПОСИЛАННЯ ПОЧТИ ЧИ ТЕЛЕФОНА ставимо значення (font-style: normal;) для скидання 
- стандартного стилю шрифту */
+    /* змінює у посилань (а) синій наклоний шрифт на стандартний вказаний */
 }
-
 
 .address-contact {
     margin-left: auto;
@@ -270,7 +295,6 @@ img {
 .list-nav-address {
     display: flex;
     gap: 40px;
-
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
@@ -291,17 +315,11 @@ img {
 
 
 
-
 .header-contact {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-font-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
-
 }
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
@@ -328,6 +346,9 @@ img {
         margin-bottom: 16px;
     }
 }
+
+
+
 
 
 .section-our-product {
@@ -875,7 +896,7 @@ img {
 
 /* МЕНЮ ТОГЛЕ */
 
-.menu-toggle {
+/* .menu-toggle {
 
     display: flex;
     align-items: center;
@@ -897,19 +918,22 @@ img {
     }
 } */
 
-.menu-toggle:hover,
+/* .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 
 .menu-container {
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
     background-color: var(--main-light-color);
     z-index: 999;
 
@@ -933,37 +957,20 @@ img {
     transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-}
+    top: 24px;
+    right: 24px;
 
-.mobaile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+    border: 1px solid #E7E9FC;
+    background-color: #fff;
+    border-radius: 50%;
 
-.mobaile-menu {
-    margin-top: 80px;
 
 }
-
-
-.mobaile-item {
-    margin-bottom: 40px;
-}
-
-.mobaile-item:last-child {
-    margin-bottom: 0;
-}
-
 
 .mobaile-link {
     display: block;
-
 
     font-weight: 700;
     font-size: 36px;
@@ -976,27 +983,36 @@ img {
     text-decoration: none;
 }
 
-.mobail-contact {
-    margin-top: 284px;
+.mobaile-link:hover,
+.mobaile-link:focus {
+    color: var(--btn-hero-color-hover);
+}
+
+.mobaile-menu {
+    margin-bottom: 284px;
+}
+
+.mobaile-item {
+    margin-bottom: 40px;
+}
+
+.mobaile-item:last-child {
+    margin-bottom: 0;
 }
 
 .mobaile-item-contact {
     margin-bottom: 40px;
 }
 
-.mobaile-item-contact:last-child {
-    margin-bottom: 0;
-}
-
 .mobail-contact-tel {
-    margin-right: 35px;
+    margin-right: 48px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
 
     letter-spacing: 0.02em;
-    text-transform: capitaliz;
+    text-transform: capitalize;
     color: var(--secondory-font-accent-color);
 }
 
@@ -1009,8 +1025,6 @@ img {
 }
 
 .mobaile-social {
-    margin-top: 48px;
-    margin-right: 60px;
-
+    display: flex;
     justify-content: space-between;
 }
