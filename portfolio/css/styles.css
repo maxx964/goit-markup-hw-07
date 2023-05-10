@@ -74,14 +74,13 @@ img {
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     /* outline: 1px solid rgb(4, 172, 91); */
 
-
-
 }
+
 
 /* ТАБЛЕТ ВЕРСІЯ */
 @media screen and (min-width: 768px) {
@@ -94,7 +93,7 @@ img {
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1160px;
+        max-width: 1158px;
     }
 
 }
@@ -730,8 +729,7 @@ img {
 
 .wrapper-footer-form {
     margin-left: 80px;
-
-
+    white-space: nowrap;
 }
 
 
@@ -769,8 +767,9 @@ img {
 }
 
 .footer-form-input {
+    padding: 0;
     padding-left: 16px;
-
+    margin-right: 24px;
     width: 264px;
     height: 40px;
     border: 1px solid #FFFFFF;
@@ -793,7 +792,8 @@ img {
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
     .footer-form-input {
-        width: 398px;
+        margin-right: 0;
+        width: 100%;
         margin-bottom: 16px;
     }
 }
@@ -804,8 +804,7 @@ img {
     justify-content: space-between;
 
     padding: 8px 24px;
-    margin-left: 24px;
-    width: 164px;
+    width: 165px;
 
     font-weight: 500;
     line-height: 1.5;

@@ -85,21 +85,31 @@ body {
 /* АДАПТИВКА І СКИДАННЯ ТЕСКТОПНИХ СТИЛІВ */
 .container {
 
-    min-width: 320px;
-    max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* width: 100%; */
+    padding-left: 15px;
+    padding-right: 15px;
 
-    /* outline: 1px solid rgb(4, 172, 91); */
-
+    outline: 1px solid rgb(4, 172, 91);
 }
+
+
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (min-width:428px) {
+    .container {
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* .footer-form-input {
+    display: none;
+} */
 
 /* ТАБЛЕТ ВЕРСІЯ */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 768px;
 
     }
 }
@@ -107,7 +117,7 @@ body {
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1160px;
+        width: 1158px;
     }
 
 }
@@ -136,10 +146,17 @@ body {
 /*  СЕКЦІЯ HEADER умовно шапка сайту*/
 
 .container-header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:428px) {
+    .container-header {}
+}
+
 
 
 .header-link {
@@ -208,8 +225,9 @@ body {
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .logotyp {
-        margin-right: 250px;
-
+        margin: 0;
+        margin-top: 24px;
+        margin-bottom: 22px;
     }
 }
 
@@ -221,14 +239,15 @@ body {
     }
 }
 
+.js-open-menu {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
 
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .js-open-menu {
-        padding: 0;
-
-        padding-top: 24px;
-        padding-bottom: 24px;
         border: none;
         background-color: transparent;
 
@@ -1215,6 +1234,7 @@ body {
 
 .wrapper-footer-form {
     margin-left: 80px;
+    white-space: nowrap;
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
@@ -1251,10 +1271,13 @@ body {
 }
 
 .footer-form-input {
-    padding-left: 16px;
 
+    padding: 0;
+    padding-left: 15px;
+    margin-right: 24px;
     width: 264px;
     height: 40px;
+    border: none;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -1276,8 +1299,11 @@ body {
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
     .footer-form-input {
-        width: 398px;
+
+        margin-right: 0;
+        width: 100%;
         margin-bottom: 16px;
+
     }
 }
 
@@ -1287,8 +1313,7 @@ body {
     justify-content: space-between;
 
     padding: 8px 24px;
-    margin-left: 24px;
-    width: 164px;
+    width: 165px;
 
     font-weight: 500;
     line-height: 1.5;
@@ -1666,20 +1691,16 @@ body {
     background-color: var(--header-color-hover);
 }
 
-.menu-toggle {
+/* .menu-toggle {
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 24px;
-    height: 24px;
-
     background-color: transparent;
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid var(--light-slate);
-}
+} */
 
 
 /* @media only screen and (min-width: 768px) {
@@ -1688,19 +1709,24 @@ body {
     }
 } */
 
-.menu-toggle:hover,
+/* .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 
 .menu-container {
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-left: 40px;
-    padding-bottom: 40px;
+
     background-color: var(--main-light-color);
     z-index: 999;
 
@@ -1710,51 +1736,47 @@ body {
     transition: transform 250ms ease-in-out;
 }
 
-/* МОБІЛЬНЕ МЕНЮ ДЛЯ ПЛАНШЕТА  */
-@media screen and (min-width:768px) {
-    .menu-container {
-        display: none;
-
-    }
-}
-
 
 
 .menu-container.is-open {
     transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+    top: 24px;
+    right: 24px;
+
+    border: 1px solid #E7E9FC;
+    background-color: #fff;
+    border-radius: 50%;
+
+
 }
 
-.mobaile-menu {
+/* .mobaile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
-}
+} */
 
-.mobaile-menu {
+/* .mobaile-menu {
     margin-top: 80px;
 
-}
+} */
 
 
-.mobaile-item {
+/* .mobaile-item {
     margin-bottom: 40px;
-}
+} */
 
-.mobaile-item:last-child {
+/* .mobaile-item:last-child {
     margin-bottom: 0;
-}
+} */
 
 
 .mobaile-link {
     display: block;
-
 
     font-weight: 700;
     font-size: 36px;
@@ -1767,27 +1789,31 @@ body {
     text-decoration: none;
 }
 
-.mobail-contact {
-    margin-top: 284px;
+.mobaile-menu {
+    margin-bottom: 284px;
+}
+
+.mobaile-item {
+    margin-bottom: 40px;
+}
+
+.mobaile-item:last-child {
+    margin-bottom: 0;
 }
 
 .mobaile-item-contact {
     margin-bottom: 40px;
 }
 
-.mobaile-item-contact:last-child {
-    margin-bottom: 0;
-}
-
 .mobail-contact-tel {
-    margin-right: 35px;
+    margin-right: 48px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
 
     letter-spacing: 0.02em;
-    text-transform: capitaliz;
+    text-transform: capitalize;
     color: var(--secondory-font-accent-color);
 }
 
@@ -1800,8 +1826,7 @@ body {
 }
 
 .mobaile-social {
-    margin-top: 48px;
-    margin-right: 60px;
+    display: flex;
 
     justify-content: space-between;
 }

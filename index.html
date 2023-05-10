@@ -20,51 +20,57 @@
   <body>
     <!-- СЕКЦІЯ  ХЕДЕР -->
     <header class="header">
-      <div class="container container-header">
-        <!-- Section Navigation-->
-        <nav class="nav-header">
-          <a class="link logotyp" href="./index.html">Web<span class="header-logo">Studio</span></a>
-          <ul class="list list-nav">
-            <li class="item item-header">
-              <a class="link header-link underline" href="./index.html">Studio</a>
-            </li>
+      <div class="container">
+        <div class="container-header">
+          <!-- Section Navigation-->
+          <nav class="nav-header">
+            <a class="link logotyp" href="./index.html"
+              >Web<span class="header-logo">Studio</span></a
+            >
+            <ul class="list list-nav">
+              <li class="item item-header">
+                <a class="link header-link underline" href="./index.html">Studio</a>
+              </li>
 
-            <li class="item item-header">
-              <a class="link header-link" href="./portfolio.html">Portfolio</a>
-            </li>
+              <li class="item item-header">
+                <a class="link header-link" href="./portfolio.html">Portfolio</a>
+              </li>
 
-            <li class="item item-header"><a class="link header-link" href="">Contacts</a></li>
-          </ul>
-        </nav>
+              <li class="item item-header"><a class="link header-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
 
-        <!-- кнопка бургер для викликук меню  -->
-        <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="btn-burger" width="32" height="22" viewBox="0 0 47 32">
-            <path
-              stroke-linejoin="round"
-              stroke-linecap="round"
-              stroke-miterlimit="4"
-              stroke-width="4.3636"
-              stroke="#000"
-              d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"
-            ></path>
-          </svg>
-        </button>
+          <!-- кнопка бургер для викликук меню  -->
+          <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="btn-burger" width="32" height="22" viewBox="0 0 47 32">
+              <path
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-miterlimit="4"
+                stroke-width="4.3636"
+                stroke="#000"
+                d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"
+              ></path>
+            </svg>
+          </button>
 
-        <!-- кнопка бургер для викликук меню  -->
+          <!-- кнопка бургер для викликук меню  -->
 
-        <!-- Section Address -->
-        <address class="address address-contact">
-          <ul class="list list-nav-address">
-            <li class="item item-address">
-              <a class="link header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
+          <!-- Section Address -->
+          <address class="address address-contact">
+            <ul class="list list-nav-address">
+              <li class="item item-address">
+                <a class="link header-contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
 
-            <li class="item item-address">
-              <a class="link header-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+              <li class="item item-address">
+                <a class="link header-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -591,8 +597,8 @@
     <!-- МОБІЛЬНЕ МЕНЮ -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="mobile-btn-close menu-toggle js-close-menu">
-        <svg class="icon-close-mobile" width="8" height="8">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="" width="8" height="8">
           <use href="./images/icons.svg#icon-modal-close"></use>
         </svg>
       </button>
@@ -619,7 +625,7 @@
           >
         </li>
       </ul>
-      <ul class="list list-footer-social mobaile-social">
+      <ul class="list mobaile-social">
         <li class="item-social">
           <a href="" class="footer-social-link">
             <svg class="footer-icon" width="24" height="24">
