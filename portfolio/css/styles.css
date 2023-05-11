@@ -88,9 +88,6 @@ img {
     }
 }
 
-/* .footer-form-input {
-    display: none;
-} */
 
 /* ТАБЛЕТ ВЕРСІЯ */
 @media screen and (min-width: 768px) {
@@ -211,6 +208,7 @@ img {
 }
 
 .js-open-menu {
+    padding: 0;
     position: absolute;
     top: 24px;
     right: 16px;
@@ -679,6 +677,7 @@ img {
 @media screen and (max-width:767px) {
     .footer-container-right {
         margin-right: 0;
+        margin-bottom: 72px;
     }
 }
 
@@ -721,7 +720,6 @@ img {
 @media screen and (max-width:768px) {
     .list-footer-social {
         justify-content: center;
-        margin-bottom: 72px;
     }
 }
 
@@ -992,7 +990,7 @@ img {
 }
 
 .mobaile-menu {
-    margin-bottom: 284px;
+    margin-bottom: 200px;
 }
 
 .mobaile-item {
@@ -1008,7 +1006,6 @@ img {
 }
 
 .mobail-contact-tel {
-    margin-right: 48px;
 
     font-weight: 700;
     font-size: 36px;
