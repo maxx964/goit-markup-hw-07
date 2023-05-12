@@ -296,7 +296,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .list-nav-address {
         display: none;
     }
@@ -371,7 +371,7 @@ img {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .section-our-product {
         padding-top: 48px;
         padding-bottom: 48px;
