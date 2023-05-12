@@ -91,7 +91,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 1px solid rgb(4, 172, 91);
+    /* outline: 1px solid rgb(4, 172, 91); */
 }
 
 
@@ -218,13 +218,6 @@ body {
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-/* @media screen and (min-width:768px) and (max-width:1200px) {
-    .logotyp {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-} */
 
 .js-open-menu {
 
@@ -423,22 +416,22 @@ body {
 
         /* ТРЕБА ПОМІРКУВАТИ */
         /* max-width: 768px; */
-
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgtab@1x.jpg), url(../images/hero/dark-bg.jpg);
 
     }
+}
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero-section {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgtab@2x.jpg), url(../images/hero/dark-bg.jpg);
-
-        }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/dark-bgtab@2x.jpg), url(../images/hero/dark-bg.jpg);
     }
 
 }
+
+
+
 
 /* ДЕСКТОП ВЕРСІЯ */
 @media screen and (min-width: 1200px) {
@@ -538,7 +531,7 @@ body {
 
 /* СЕКЦІЯ ПЕРЕВАГИ */
 
-/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+/* ЗАГАЛЬНО ДЛЯ МОБІЛЬНОГО ДЛЯ ПЛАНШЕТУ І ДЕСКТОПУ  */
 @media screen and (max-width:1200px) {
 
     .visually-hidden {
@@ -546,7 +539,7 @@ body {
     }
 }
 
-/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+/* ЗАГАЛЬНО ДЛЯ МОБІЛЬНОГО ДЛЯ ПЛАНШЕТУ І ДЕСКТОПУ  */
 @media screen and (max-width:1200px) {
     .icon-item {
         display: none;
@@ -594,10 +587,7 @@ body {
     .list-advantages {
         display: flex;
         justify-content: space-between;
-        /* align-items: center; */
         margin-left: 0;
-
-
     }
 }
 
@@ -626,12 +616,12 @@ body {
 }
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
-/* @media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
     .item-advantages {
         flex-basis: calc(100% / 2 - 24px);
         margin-left: 24px;
     }
-} */
+}
 
 @media screen and (min-width:768px) and (max-width:1200px) {
     .item-advantages {
@@ -671,18 +661,6 @@ body {
     }
 }
 
-/* 
-.item-punctuality::before {
-    background-image: url(../css/bgr-img-hero/clock.png);
-}
-
-.item-deligenc::before {
-    background-image: url(../css/bgr-img-hero/diagram.png); 
-}
-
-.item-technologies::before {
-    background-image: url(../css/bgr-img-hero/astronaut.png);
-} */
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -703,7 +681,7 @@ body {
     color: var(--secondory-font-color);
 }
 
-/* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ  */
+/* ВЕРСІЯ МОБІЛЬНА ДЛЯ ПЛАНШЕТУ І ДЕСКТОПУ */
 @media screen and (max-width:1200px) {
 
     .title-advantages {
@@ -756,7 +734,7 @@ body {
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .text {
-        width: 351px;
+        width: 356px;
     }
 }
 
@@ -868,13 +846,6 @@ body {
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-/* @media screen and (min-width:768px) and (max-width:1200px) {
-    .list-ourteam {
-        flex-basis: calc(100% / 2);
-
-    }
-} */
 
 .item-team {
     width: 264px;
@@ -1042,6 +1013,12 @@ body {
     padding-bottom: 100px;
     background-color: var(--secondory-font-color);
 }
+
+
+
+
+
+
 
 /* МОБІЛЬНА ВЕРСІЯ ТА ДЛЯ ПЛАНШЕТУ */
 @media screen and (max-width:1200px) {
@@ -1229,13 +1206,6 @@ body {
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-@media screen and (min-width:768px) and (max-width:1200px) {
-    .wrapper-footer-form {
-        display: block;
-    }
-}
-
 .footer-modal-text {
     margin-bottom: 16px;
 
@@ -1394,11 +1364,11 @@ body {
 }
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
-@media screen and (min-width:768px) and (max-width:1200px) {
+/* @media screen and (min-width:768px) and (max-width:1200px) {
     .modal {
         max-width: 408px;
     }
-}
+} */
 
 
 .icon-modal-btn {
