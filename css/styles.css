@@ -979,16 +979,25 @@ body {
     border: 1px solid var(--btn-hero-color-hover);
 }
 
-
-
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:767px) {
     .customer-link {
-        min-width: 190px;
+        width: 190px;
 
-        /* background-color: #404BBF; */
+
     }
 }
+
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+/* @media screen and (max-width:428px) {
+    .item-customers {
+
+        width: calc((100% - 20px) / 2);
+
+
+    }
+} */
 
 
 .icon-customers {
@@ -1363,13 +1372,6 @@ body {
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-/* @media screen and (min-width:768px) and (max-width:1200px) {
-    .modal {
-        max-width: 408px;
-    }
-} */
-
 
 .icon-modal-btn {
     position: absolute;
@@ -1676,8 +1678,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     background-color: var(--main-light-color);
     z-index: 999;
@@ -1687,24 +1689,6 @@ body {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
-
-/* 
-.mob-menu-container {
-    position: relative;
-} */
-
-/* @media only screen and (max-width: 768px) {
-    .js-menu-container {
-
-        height: 100%;
-    }
-} */
-
-
-
-
-
-
 
 .menu-container.is-open {
     transform: translateX(0);
