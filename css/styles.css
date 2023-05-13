@@ -938,6 +938,7 @@ body {
     .customers-list {
         row-gap: 72px;
         column-gap: 16px;
+        justify-content: center;
     }
 
 }
@@ -983,7 +984,6 @@ body {
 @media screen and (max-width:767px) {
     .customer-link {
         width: 190px;
-
 
     }
 }
@@ -1111,7 +1111,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 268px;
-        margin-bottom: 72px;
 
     }
 }
@@ -1126,6 +1125,7 @@ body {
 @media screen and (max-width:767px) {
     .footer-container-left {
         margin-right: 0;
+        margin-bottom: 72px;
     }
 }
 
@@ -1668,12 +1668,13 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 } */
 
+
+
 .menu-container {
     padding-left: 40px;
     padding-right: 35px;
     padding-bottom: 40px;
     padding-top: 80px;
-
 
     position: fixed;
     top: 0;
@@ -1690,21 +1691,36 @@ body {
     transition: transform 250ms ease-in-out;
 }
 
+
 .menu-container.is-open {
     transform: translateX(0);
 }
+
+
+.mob-menu {
+    width: 100%;
+
+}
+
+
 
 .menu-toggle {
     position: absolute;
     top: 24px;
     right: 24px;
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+
 
     border: 1px solid #E7E9FC;
     background-color: #fff;
     border-radius: 50%;
-
-
 }
+
+
 
 
 .mobaile-link {
@@ -1728,7 +1744,7 @@ body {
 
 
 .mobaile-menu {
-    margin-bottom: 284px;
+    /* margin-bottom: 284px; */
 }
 
 .mobaile-item {
@@ -1739,9 +1755,14 @@ body {
     margin-bottom: 0;
 }
 
-.mobaile-item-contact {
+.mobail-contact {
+    margin-bottom: 48px;
+}
+
+.mobaile-item-tel {
     margin-bottom: 40px;
 }
+
 
 .mobail-contact-tel {
 
@@ -1752,6 +1773,14 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondory-font-accent-color);
+}
+
+@media screen and (max-width: 428px) {
+
+    .mobail-contact-tel {
+        font-size: 24px;
+    }
+
 }
 
 .mobail-contact-mail {
