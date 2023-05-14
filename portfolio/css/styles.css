@@ -129,8 +129,18 @@ img {
 /*  СЕКЦІЯ HEADER умовно шапка сайту*/
 
 .container-header {
-    position: relative;
+
     display: flex;
+    align-items: center;
+}
+
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:767px) {
+    .container-header {
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 
@@ -194,33 +204,20 @@ img {
 @media screen and (max-width:768px) {
     .logotyp {
         margin: 0;
-        margin-top: 24px;
-        margin-bottom: 22px;
+
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-@media screen and (min-width:768px) and (max-width:1200px) {
-    .logotyp {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-}
 
 .js-open-menu {
     padding: 0;
-    position: absolute;
-    top: 24px;
+    display: inline-flex;
+    border: none;
     right: 16px;
+    background-color: transparent;
+
 }
 
-/* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
-    .js-open-menu {
-        border: none;
-        background-color: transparent;
-    }
-}
 
 @media screen and (min-width:768px) {
     .js-open-menu {
@@ -331,17 +328,15 @@ img {
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .item-address {
-        margin-top: 16px;
         margin-bottom: 12px;
-
     }
 }
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .item-address:last-child {
-        margin-top: 0;
-        margin-bottom: 16px;
+
+        margin-bottom: 0;
     }
 }
 
@@ -589,7 +584,16 @@ img {
 
 .footer-container {
     display: flex;
-    align-items: baseline
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:768px) {
+    .footer-container {
+        display: block;
+
+    }
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
@@ -603,11 +607,29 @@ img {
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .footer-container {
+
+        padding-left: 108px;
+        padding-right: 164px;
+        display: flex;
         flex-wrap: wrap;
 
     }
+
 }
 
+.wrapper-footer {
+    display: flex;
+    gap: 120px;
+}
+
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .wrapper-footer {
+        gap: 24px;
+        margin-bottom: 72px;
+
+    }
+}
 
 .logotyp-footer {
     font-family: "Raleway", sans-serif;
@@ -661,11 +683,6 @@ img {
 }
 
 
-
-.footer-container-left {
-    margin-right: 120px;
-}
-
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:768px) {
     .footer-container-left {
@@ -680,17 +697,6 @@ img {
         margin-bottom: 72px;
     }
 }
-
-/* ПЛАНШЕТНА ВЕРСІЯ */
-@media screen and (min-width:768px) and (max-width:1200px) {
-    .footer-container-left {
-        margin-right: 24px;
-        margin-left: 80px;
-        margin-bottom: 72px;
-    }
-
-}
-
 
 
 
@@ -745,11 +751,11 @@ img {
     fill: var(--bgr-color-icon);
 }
 
-
+/* 
 .wrapper-footer-form {
     margin-left: 80px;
     white-space: nowrap;
-}
+} */
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
