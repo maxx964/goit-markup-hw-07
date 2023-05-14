@@ -622,6 +622,15 @@ img {
     gap: 120px;
 }
 
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:767px) {
+    .wrapper-footer {
+
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .wrapper-footer {
@@ -677,7 +686,6 @@ img {
         margin-left: auto;
         margin-right: auto;
         width: 268px;
-        margin-bottom: 72px;
 
     }
 }
@@ -687,6 +695,7 @@ img {
 @media screen and (max-width:768px) {
     .footer-container-left {
         margin-right: 0;
+        margin-bottom: 72px;
     }
 }
 
@@ -928,7 +937,6 @@ img {
 } */
 
 .menu-container {
-
     padding-left: 40px;
     padding-right: 35px;
     padding-bottom: 40px;
@@ -949,32 +957,38 @@ img {
     transition: transform 250ms ease-in-out;
 }
 
-/* МОБІЛЬНЕ МЕНЮ ДЛЯ ПЛАНШЕТА  */
-@media screen and (min-width:768px) {
-    .menu-container {
-        display: none;
-
-
-    }
-}
-
-
 
 .menu-container.is-open {
     transform: translateX(0);
 }
 
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
 .menu-toggle {
     position: absolute;
     top: 24px;
     right: 24px;
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+
 
     border: 1px solid #E7E9FC;
     background-color: #fff;
     border-radius: 50%;
-
-
 }
+
+
+
 
 .mobaile-link {
     display: block;
@@ -995,9 +1009,10 @@ img {
     color: var(--btn-hero-color-hover);
 }
 
-.mobaile-menu {
-    margin-bottom: 284px;
-}
+
+/* .mobaile-menu {
+    margin-bottom: auto;
+} */
 
 .mobaile-item {
     margin-bottom: 40px;
@@ -1007,9 +1022,14 @@ img {
     margin-bottom: 0;
 }
 
-.mobaile-item-contact {
+.mobail-contact {
+    margin-bottom: 48px;
+}
+
+.mobaile-item-tel {
     margin-bottom: 40px;
 }
+
 
 .mobail-contact-tel {
 
@@ -1020,6 +1040,14 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondory-font-accent-color);
+}
+
+@media screen and (max-width: 428px) {
+
+    .mobail-contact-tel {
+        font-size: 24px;
+    }
+
 }
 
 .mobail-contact-mail {
