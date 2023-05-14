@@ -1082,6 +1082,14 @@ body {
     gap: 120px;
 }
 
+/* МОБІЛЬНА ВЕРСІЯ  */
+@media screen and (max-width:767px) {
+    .wrapper-footer {
+
+        flex-direction: column;
+        gap: 0;
+    }
+}
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -1140,7 +1148,7 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 268px;
+
 
     }
 }
@@ -1173,15 +1181,6 @@ body {
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-@media screen and (min-width:768px) and (max-width:1200px) {
-    .footer-container-left {
-        /* margin-right: 24px;
-        margin-left: 80px;
-        margin-bottom: 72px; */
-    }
-
-}
 
 .text-social-media {
     margin-bottom: 16px;
@@ -1214,13 +1213,8 @@ body {
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-/* @media screen and (min-width:768px) and (max-width:1200px) {
-    .list-footer-social {
-        justify-content: start;
-    }
 
-} */
+
 
 .footer-social-link {
     display: flex;
