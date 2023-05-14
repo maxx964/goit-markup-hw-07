@@ -575,8 +575,8 @@ body {
 .list-advantages {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 24px; */
-    margin-left: -24px;
+    gap: 24px;
+    /* margin-left: -24px; */
 }
 
 
@@ -604,9 +604,13 @@ body {
 
 .item-advantages {
     flex-basis: calc(100% / 4 - 24px);
-    margin-left: 24px;
+    /* margin-left: 24px; */
     /* width: calc((100% - 3 * 24px) / 4); */
 }
+
+/* .item-advantages:first-child {
+    margin-left: 0px;
+} */
 
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:767px) {
@@ -616,6 +620,7 @@ body {
         margin-bottom: 72px;
     }
 }
+
 
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:767px) {
@@ -653,7 +658,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 264px;
     height: 112px;
     margin-bottom: 8px;
     background-size: 264px;
@@ -1790,9 +1795,20 @@ body {
 }
 
 
-/* .mobaile-menu {
-    margin-bottom: auto;
-} */
+
+
+
+.mob-menu {
+    width: 100%;
+
+
+}
+
+.wrap-contact-social {
+    margin-top: 100%;
+}
+
+
 
 .mobaile-item {
     margin-bottom: 40px;
