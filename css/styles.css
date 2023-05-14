@@ -1237,7 +1237,7 @@ body {
     padding: 0;
     padding-left: 15px;
     margin-right: 24px;
-    width: 264px;
+    max-width: 264px;
     height: 40px;
     border: none;
     border: 1px solid #FFFFFF;
@@ -1697,9 +1697,10 @@ body {
 }
 
 
-.mob-menu {
-    width: 100%;
-
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -1743,9 +1744,9 @@ body {
 }
 
 
-.mobaile-menu {
-    /* margin-bottom: 284px; */
-}
+/* .mobaile-menu {
+    margin-bottom: auto;
+} */
 
 .mobaile-item {
     margin-bottom: 40px;
