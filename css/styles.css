@@ -93,7 +93,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    /* outline: 1px solid rgb(4, 172, 91); */
+    outline: 1px solid rgb(4, 172, 91);
 }
 
 
@@ -157,7 +157,7 @@ body {
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:767px) {
     .container-header {
-
+        position: relative;
         padding-top: 24px;
         padding-bottom: 24px;
 
@@ -197,6 +197,13 @@ body {
 
 }
 
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:767px) {
+    .nav-header {
+        display: none;
+    }
+}
+
 
 
 .list-nav {
@@ -204,13 +211,6 @@ body {
     gap: 40px;
 
 
-}
-
-/* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:767px) {
-    .list-nav {
-        display: none;
-    }
 }
 
 
@@ -227,7 +227,6 @@ body {
     margin-right: 76px;
 }
 
-/* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:767px) {
     .logotyp {
         margin: 0;
@@ -235,12 +234,17 @@ body {
     }
 }
 
+
 .js-open-menu {
+    position: absolute;
+    top: 24px;
+    right: 16px;
     padding: 0;
     display: inline-flex;
     border: none;
-    right: 16px;
+    margin-left: auto;
     background-color: transparent;
+
 
 }
 
@@ -1724,7 +1728,7 @@ body {
 .menu-container {
     padding-left: 40px;
     padding-right: 35px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-top: 80px;
 
     position: fixed;
@@ -1795,7 +1799,7 @@ body {
 }
 
 
-/* .mob-menu {
+/* .mobaile-menu {
     margin-bottom: auto;
 } */
 
