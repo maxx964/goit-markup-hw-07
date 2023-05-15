@@ -1408,8 +1408,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 408px;
-    min-height: 576px;
+    width: 408px;
+    height: 576px;
 
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1420,13 +1420,20 @@ body {
 
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:767px) {
+@media screen and (max-width:427px) {
     .modal {
-        max-width: 392px;
+        width: 100%;
 
     }
 }
 
+/* ПЛАНШЕТНА ВЕРСІЯ */
+@media screen and (min-width:428px) and (max-width:768px) {
+    .modal {
+        width: 392px;
+
+    }
+}
 
 .icon-modal-btn {
     position: absolute;
@@ -1579,9 +1586,9 @@ body {
     resize: none;
     /* для зміни повзунка щоб не ростягувати рамку без потреби     */
     /* display: block; */
-    /* width: 100%; */
-    min-width: 360px;
-    min-height: 120px;
+    width: 100%;
+
+    height: 120px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
