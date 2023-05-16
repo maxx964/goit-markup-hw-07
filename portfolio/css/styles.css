@@ -137,7 +137,7 @@ img {
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:767px) {
     .container-header {
-
+        justify-content: space-between;
         padding-top: 24px;
         padding-bottom: 24px;
     }
@@ -172,12 +172,6 @@ img {
 
 }
 
-/* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
-    .nav-header {
-        display: none;
-    }
-}
 
 
 .list-nav {
@@ -186,6 +180,12 @@ img {
 
 }
 
+/* МОБІЛЬНА ВЕРСІЯ */
+@media screen and (max-width:768px) {
+    .list-nav {
+        display: none;
+    }
+}
 
 
 .logotyp {
@@ -214,7 +214,7 @@ img {
     padding: 0;
     display: inline-flex;
     border: none;
-    margin-left: auto;
+    /* margin-left: auto; */
     background-color: transparent;
 
 }
