@@ -93,8 +93,8 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 1px solid rgb(4, 172, 91);
-    background-color: blueviolet;
+    /* outline: 1px solid rgb(4, 172, 91);
+    background-color: blueviolet; */
 }
 
 
@@ -1284,7 +1284,7 @@ body {
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
     .footer-form-input {
-        /* margin-right: 0; */
+        margin-right: 0;
         width: 100%;
         margin-bottom: 16px;
 
