@@ -75,7 +75,9 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 
-    /* outline: 1px solid rgb(4, 172, 91); */
+    outline: 1px solid rgb(4, 172, 91);
+
+
 }
 
 
@@ -372,9 +374,9 @@ img {
 /* МОБІЛЬНА ВЕРСІЯ */
 @media screen and (max-width:767px) {
     img {
-        /* display: block;
-        width: 100%; */
-        height: auto;
+        display: block;
+        width: 100%;
+        /* height: auto; */
     }
 }
 

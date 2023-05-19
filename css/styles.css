@@ -93,7 +93,8 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    /* outline: 1px solid rgb(4, 172, 91); */
+    outline: 1px solid rgb(4, 172, 91);
+    background-color: blueviolet;
 }
 
 
@@ -1198,6 +1199,11 @@ body {
 
 
 
+.wrapper-footer-form {
+    display: flex;
+    align-items: end;
+}
+
 
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
@@ -1714,8 +1720,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     background-color: var(--main-light-color);
     z-index: 999;
