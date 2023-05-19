@@ -41,7 +41,12 @@
           </nav>
 
           <!-- кнопка бургер для викликук меню  -->
-          <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button
+            type="button"
+            class="js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="btn-burger" width="32" height="22" viewBox="0 0 47 32">
               <path
                 stroke-linejoin="round"
@@ -495,14 +500,13 @@
             <p class="footer-modal-text">Subscribe</p>
 
             <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail" />
-
-            <button type="submit" class="footer-form-btn">
-              Subscribe
-              <svg class="icon-form" width="24" height="20">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
           </form>
+          <button type="submit" class="footer-form-btn">
+            Subscribe
+            <svg class="icon-form" width="24" height="20">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
@@ -599,7 +603,9 @@
       <div class="mob-menu">
         <ul class="mobaile-menu list">
           <li class="mobaile-item">
-            <a href="./index.html" class="link mobaile-link">Studio</a>
+            <a href="./index.html" class="link mobaile-link"
+              ><span class="activated">Studio</span></a
+            >
           </li>
           <li class="mobaile-item">
             <a href="./portfolio.html" class="link mobaile-link">Portfolio</a>
