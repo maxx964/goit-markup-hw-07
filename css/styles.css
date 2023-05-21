@@ -1202,22 +1202,18 @@ body {
 .wrapper-footer-form {
     display: flex;
     align-items: end;
+    gap: 24px;
 }
 
-
-/* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
-    .wrapper-footer-form {
-        margin-top: 72px;
-    }
-}
 
 /* МОБІЛЬНА ВЕРСІЯ  */
 @media screen and (max-width:768px) {
     .wrapper-footer-form {
         display: block;
+        margin-top: 72px;
     }
 }
+
 
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -1247,11 +1243,12 @@ body {
     }
 }
 
+
+
+
 .footer-form-input {
 
-    padding: 0;
     padding-left: 15px;
-    margin-right: 24px;
 
     width: 264px;
     height: 40px;
@@ -1270,6 +1267,7 @@ body {
 /* PPPPPPPPPPPPPPPPPPPPPPPPLLLLLLLLLLLLLLLLLL */
 
 ::placeholder {
+
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
@@ -1286,7 +1284,6 @@ body {
     .footer-form-input {
         margin-right: 0;
         width: 100%;
-        margin-bottom: 16px;
 
     }
 }
@@ -1336,6 +1333,7 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 16px;
 
     }
 }
@@ -1741,12 +1739,12 @@ body {
     transform: translateX(0);
 }
 
-/* 
+
 .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} */
+}
 
 
 
