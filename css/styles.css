@@ -1055,6 +1055,7 @@ body {
 
         display: flex;
         flex-wrap: wrap;
+        gap: 72px;
 
     }
 }
@@ -1079,8 +1080,8 @@ body {
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .wrapper-footer {
-        gap: 24px;
-        margin-bottom: 72px;
+        column-gap: 24px;
+
 
     }
 }
