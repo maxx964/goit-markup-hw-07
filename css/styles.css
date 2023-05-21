@@ -1717,6 +1717,10 @@ body {
     padding-bottom: 40px;
     padding-top: 80px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -1737,12 +1741,12 @@ body {
     transform: translateX(0);
 }
 
-
+/* 
 .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 
 

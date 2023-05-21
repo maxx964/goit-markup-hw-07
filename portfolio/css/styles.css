@@ -951,10 +951,15 @@ img {
 } */
 
 .menu-container {
+
     padding-left: 40px;
     padding-right: 35px;
     padding-bottom: 40px;
     padding-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     position: fixed;
     top: 0;
@@ -977,11 +982,11 @@ img {
 }
 
 
-.menu-container {
+/* .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 
 
