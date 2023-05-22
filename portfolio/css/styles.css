@@ -183,7 +183,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .list-nav {
         display: none;
     }
@@ -204,7 +204,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .logotyp {
         margin-right: 0;
     }
@@ -212,7 +212,7 @@ img {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .js-open-menu {
         padding: 0;
         display: inline-flex;
@@ -223,7 +223,7 @@ img {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
     .js-open-menu {
         display: none;
 
@@ -258,17 +258,21 @@ img {
 }
 
 .underline::after {
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
     content: "";
-    width: 48px;
+    width: 66px;
     height: 4px;
     background: #404BBF;
     border-radius: 2px;
-    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+
+
+
+
+
 
 .activated {
     color: var(--header-color-hover);
@@ -410,7 +414,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .list-button {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -503,7 +507,7 @@ img {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .item-images {
         width: 396px;
 
@@ -592,7 +596,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-container {
         display: block;
 
@@ -600,7 +604,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-container {
         display: block;
 
@@ -610,15 +614,19 @@ img {
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .footer-container {
+        padding: 0;
 
-        width: 582px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 72px;
-
+        display: block;
+        width: 552px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
     }
 
 }
+
+
+
 
 
 .wrapper-footer {
@@ -659,7 +667,7 @@ img {
 
 
 /* МОБІЛЬНА ВЕРСІЯ */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .logotyp-footer {
         display: flex;
         justify-content: center;
@@ -684,7 +692,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .text-footer {
         display: block;
         margin-left: auto;
@@ -708,7 +716,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .text-social-media {
         text-align: center;
     }
@@ -720,7 +728,7 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .list-footer-social {
         justify-content: center;
     }
@@ -749,14 +757,14 @@ img {
 }
 
 
-.wrapper-footer-form {
+/* .wrapper-footer-form {
     display: flex;
     align-items: end;
     gap: 24px;
-}
+} */
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .wrapper-footer-form {
         display: block;
         margin-top: 72px;
@@ -767,7 +775,7 @@ img {
 /* ПЛАНШЕТНА ВЕРСІЯ */
 @media screen and (min-width:768px) and (max-width:1200px) {
     .wrapper-footer-form {
-        gap: 24px;
+        margin-top: 72px;
 
 
     }
@@ -784,15 +792,16 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-modal-text {
         text-align: center;
     }
 }
 
 .footer-form-input {
-
-    padding-left: 16px;
+    margin-right: 24px;
+    padding: 0;
+    padding-left: 15px;
 
     width: 264px;
     height: 40px;
@@ -814,27 +823,22 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-form-input {
-        margin-right: 0;
+        margin-right: -24px;
         width: 100%;
 
     }
 }
 
-/* ПЛАНШЕТНА ВЕРСІЯ */
-@media screen and (min-width:768px) and (max-width:1200px) {
-    .footer-form-input {
-        margin-right: 0;
-    }
-}
 
 .footer-form-btn {
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 16px;
 
-    padding: 8px 24px;
+    padding: 0;
     width: 165px;
     height: 40px;
 
@@ -862,16 +866,18 @@ img {
 }
 
 /* МОБІЛЬНА ВЕРСІЯ  */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-form-btn {
-        margin-top: 16px;
-        margin-left: 0;
-        display: block;
+        padding: 0;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
-
+        margin-top: 16px;
     }
+
 }
+
+
 
 
 
